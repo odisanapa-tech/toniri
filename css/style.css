@@ -64,24 +64,33 @@ a {
 
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 48px);
+  max-width: var(--max-width);
   z-index: 1000;
   height: var(--header-height);
   display: flex;
   align-items: center;
-  background: rgba(15, 15, 15, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: background 0.4s, backdrop-filter 0.4s, box-shadow 0.4s;
+  background: rgba(15, 15, 15, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background 0.4s, backdrop-filter 0.4s, box-shadow 0.4s, border-radius 0.4s, width 0.4s, top 0.4s;
 }
 
 .header--scrolled {
-  background: rgba(250, 249, 246, 0.92);
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0;
+  background: rgba(250, 249, 246, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 var(--border);
+  border: none;
 }
 
 .header--scrolled .header__logo,
@@ -99,6 +108,7 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 0 32px;
 }
 
 .header__logo {
@@ -196,7 +206,7 @@ a {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
