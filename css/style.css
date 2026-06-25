@@ -194,9 +194,9 @@ a {
 
 .hero__bg {
   position: absolute;
-  inset: 0;
+  inset: -5% 0;
   background-size: cover;
-  background-position: center top;
+  background-position: center 30%;
   background-repeat: no-repeat;
 }
 
