@@ -479,9 +479,12 @@ a {
   transform: translateY(-4px);
 }
 
-.method__card-icon {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.method__card-number {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
 }
 
 .method__card-title {
@@ -591,8 +594,7 @@ a {
 }
 
 .format-card__icon {
-  font-size: 1.8rem;
-  margin-bottom: 16px;
+  display: none;
 }
 
 .format-card__title {
@@ -783,15 +785,7 @@ a {
 }
 
 .contact-item__icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid var(--border-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-size: 1.1rem;
+  display: none;
 }
 
 .contact-item a {
@@ -898,6 +892,9 @@ a {
 
 .subpage-hero {
   padding: 180px 0 100px;
+  min-height: 70vh;
+  display: flex;
+  align-items: flex-end;
   background: var(--bg-dark);
   color: var(--text-light);
   position: relative;
@@ -908,7 +905,7 @@ a {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center 20%;
   opacity: 0.25;
 }
 
@@ -985,8 +982,7 @@ a {
 }
 
 .info-block__icon {
-  font-size: 1.6rem;
-  margin-bottom: 12px;
+  display: none;
 }
 
 .info-block__title {
