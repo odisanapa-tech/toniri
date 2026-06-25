@@ -71,6 +71,9 @@ a {
   height: var(--header-height);
   display: flex;
   align-items: center;
+  background: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   transition: background 0.4s, backdrop-filter 0.4s, box-shadow 0.4s;
 }
 
